@@ -1,0 +1,85 @@
+{
+  "powers": [
+    {
+      "name": "Tempest King",
+      "lives": 8,
+      "description": "After anyone draws Storm Surge, ignore hazards for the next two draws."
+    },
+    {
+      "name": "Merchant",
+      "lives": 6,
+      "description": "Earn 25 gold each time you harbor. Remaining ships sell for 60 gold each."
+    },
+    {
+      "name": "Siren Queen",
+      "lives": 7,
+      "description": "Collect everyone\u2019s enchanted cards. Gain ships for pairs at round end. Ignore hazards and harbor freely during Siren\u2019s Song."
+    },
+    {
+      "name": "Undead Admiral",
+      "lives": 6,
+      "description": "Plunder sinking captains. After you harbor, curses take 10 extra gold from the pot."
+    },
+    {
+      "name": "Mechanic",
+      "lives": 6,
+      "description": "Three repair tokens save ships. Sell repairs for 100 gold. Ignore Broken Rudder."
+    },
+    {
+      "name": "Tide Watcher",
+      "lives": 6,
+      "description": "Take a secret card each round. Keep its treasure or place it atop the deck at the right moment."
+    },
+    {
+      "name": "Navigator",
+      "lives": 6,
+      "description": "Five tokens protect you for four draws. While sailing, choose which of the last two cards any Echo copies."
+    },
+    {
+      "name": "Cannoneer",
+      "lives": 7,
+      "description": "Fire cannon tokens to force captains to harbor. Alone in the storm, your treasures are doubled."
+    },
+    {
+      "name": "Blood Sailor",
+      "lives": 6,
+      "description": "Earn 35 gold when a starting neighbor sinks. Gain a life when each loses their last ship."
+    },
+    {
+      "name": "Storm Warden",
+      "lives": 6,
+      "description": "Three Warden tokens each save half the pot when you sink. Stack with Escape Ship or Marooned."
+    },
+    {
+      "name": "Cursed Captain",
+      "lives": 6,
+      "description": "Collect the first two curses each round from anyone. Your own curses never reduce the pot."
+    },
+    {
+      "name": "Parrot Whisperer",
+      "lives": 6,
+      "description": "Start with two tokens. Gain one for every Prophecy drawn. Spend tokens to arrange the next two cards."
+    },
+    {
+      "name": "Sea Witch",
+      "lives": 6,
+      "description": "Gather Hexes to gain gold and curse your rivals. Heart tokens save your ships."
+    },
+    {
+      "name": "Ghost Captain",
+      "lives": 1,
+      "description": "Your only ship is indestructible. Earn 30 gold whenever you sink."
+    },
+    {
+      "name": "Marooned Monarch",
+      "lives": 6,
+      "description": "Ignore Marooned. Earn 60 gold whenever another captain is marooned."
+    },
+    {
+      "name": "Storm Swindler",
+      "lives": 6,
+      "description": "Claim the first treasure outside safe waters each round. It pays you instead of the pot."
+    }
+  ],
+  "edition": "expansion"
+}

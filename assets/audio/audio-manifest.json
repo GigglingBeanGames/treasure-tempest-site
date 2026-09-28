@@ -1,0 +1,336 @@
+{
+  "version": 13,
+  "verifiedOn": "2026-09-27",
+  "sounds": {
+    "click": {
+      "src": "assets/audio/click.ogg",
+      "volume": 0.32,
+      "creditId": "kenney-casino",
+      "originalFile": "Audio/card-place-1.ogg",
+      "sha256": "d8f26c33a665dcbdcc6f632f6050bc9dd548feb0d4942d4547615926d3926810"
+    },
+    "draw": {
+      "src": "assets/audio/draw.ogg",
+      "volume": 0.55,
+      "creditId": "kenney-casino",
+      "originalFile": "Audio/card-slide-1.ogg",
+      "sha256": "006cf9822d15d7063f8899e56041f41646df30adb6fbd8b974ee5d5420012690"
+    },
+    "shuffle": {
+      "src": "assets/audio/shuffle.ogg",
+      "volume": 0.48,
+      "creditId": "kenney-casino",
+      "originalFile": "Audio/card-shuffle.ogg",
+      "sha256": "96c84883a30845ede723a4cf2e8369e9837e7dd4e0d4eb0212b0a7ed21b0f544"
+    },
+    "token": {
+      "src": "assets/audio/token.ogg",
+      "volume": 0.5,
+      "creditId": "kenney-casino",
+      "originalFile": "Audio/chip-lay-1.ogg",
+      "sha256": "4b2111252ccb64eed67f171e061053849cfbb29873536c03948646f244a3905c"
+    },
+    "coins": {
+      "src": "assets/audio/coins.ogg",
+      "volume": 0.55,
+      "creditId": "kenney-rpg",
+      "originalFile": "Audio/handleCoins.ogg",
+      "sha256": "8a91f969e932df709df80ee124d86a51389eed9b67f22e5e716bc2bbf60d8dab"
+    },
+    "creak": {
+      "src": "assets/audio/creak.ogg",
+      "volume": 0.3,
+      "creditId": "kenney-rpg",
+      "originalFile": "Audio/creak1.ogg",
+      "sha256": "8a346186fd297254248cab8e8117060a52a5cf2a84f603153a762108550ea95e"
+    },
+    "cannon": {
+      "src": "assets/audio/cannon.ogg",
+      "volume": 0.4,
+      "creditId": "thimras",
+      "originalFile": "cannon_fire_1.ogg",
+      "sha256": "2b21ffa41e5c3be4eecdfbd3490544f5aa8b6d1581787265863e13de1a8e599d",
+      "downloadUrl": "https://opengameart.org/sites/default/files/cannon_fire_1.ogg"
+    },
+    "whirlpool": {
+      "src": "assets/audio/whirlpool-wave.flac",
+      "volume": 0.85,
+      "creditId": "transitking",
+      "originalFile": "wave_02_cc0-11505__transitking__wavesound.flac",
+      "sha256": "afa112a66c4cafe06ef76d5e2d4d00a701d4520c58eef63b862afa771991d77a",
+      "changes": "Original wave recording unchanged."
+    },
+    "surge": {
+      "src": "assets/audio/surge.ogg",
+      "volume": 0.4,
+      "creditId": "jaggedstone",
+      "originalFile": "magical_1_0.ogg",
+      "sha256": "119f9061a566c72c1c58444b03f8685b833079ef268dda02fe742eb34d3bc68f",
+      "downloadUrl": "https://opengameart.org/sites/default/files/magical_1_0.ogg"
+    },
+    "curse": {
+      "src": "assets/audio/curse-coin-runway.mp3",
+      "volume": 0.5,
+      "creditId": "runway-curses",
+      "duration": 1,
+      "sha256": "3c5a49aa75dbeb2587cd49f20759e418a41a730a4e21128829bfb7078b98e6ca"
+    },
+    "harbor": {
+      "src": "assets/audio/harbor.wav",
+      "volume": 0.35,
+      "creditId": "pwl",
+      "originalFile": "bell_ding1.wav",
+      "sha256": "8ce40f49cd211125303df59db0da4fe911e8b2f34d3847011b15137c6b5850de",
+      "downloadUrl": "https://opengameart.org/sites/default/files/bell_ding1.wav"
+    },
+    "victory": {
+      "src": "assets/audio/victory.wav",
+      "volume": 0.45,
+      "creditId": "fupi",
+      "originalFile": "bell.wav",
+      "sha256": "7b21371d23bcc5c56866b9bb32791b21bfce467edae05eef4bbc9d547da417a9",
+      "downloadUrl": "https://opengameart.org/sites/default/files/bell.wav"
+    },
+    "splash": {
+      "src": "assets/audio/whirlpool.ogg",
+      "volume": 0.6,
+      "creditId": "thimras",
+      "originalFile": "cannon_miss_1.ogg",
+      "sha256": "d91a1effc2964673033fa9f8d22093029fa0b500aea0bafb86724738c0e89fe3",
+      "downloadUrl": "https://opengameart.org/sites/default/files/cannon_miss_1.ogg"
+    },
+    "laugh-male": {
+      "src": "assets/audio/laugh-male.ogg",
+      "volume": 0.65,
+      "sha256": "034a6d10d04982288272330166bb40bc27ade281f7bed1c5193774e7141f402a",
+      "creditId": "supergeek-laughter",
+      "changes": "Short excerpt ending at a quiet laugh boundary; 120 ms tail fade. 2.53 seconds.",
+      "originalFile": "ogalaughter_2.ogg, 9.6\u201312.5 seconds, natural speed"
+    },
+    "laugh-female-1": {
+      "src": "assets/audio/laugh-female-1-short.mp3",
+      "volume": 0.65,
+      "sha256": "5fd9544792eb61c0564961222cf563c16ac95c867d4512fa8b0fe533f829ac4e",
+      "creditId": "auravoice",
+      "changes": "Short excerpt ending at a quiet laugh boundary; 120 ms tail fade. 2.60 seconds."
+    },
+    "laugh-female-2": {
+      "src": "assets/audio/laugh-female-2-short.mp3",
+      "volume": 0.65,
+      "sha256": "12609b7a2a6b494fd2404cc3bb900db8ce12cc4947f012cca7c22df88ad19ecd",
+      "creditId": "auravoice",
+      "changes": "Short excerpt ending at a quiet laugh boundary; 120 ms tail fade. 2.74 seconds."
+    },
+    "laugh-spectral-1": {
+      "src": "assets/audio/laugh-spectral-1-short.mp3",
+      "volume": 0.65,
+      "sha256": "d26d3b53143efb031ff3bd909f5d04817b04cbdad12a274872a1f2ab9b159270",
+      "creditId": "eldritch-grim",
+      "changes": "Short laugh phrase with a gentle 300 ms tail fade; 2.10 seconds."
+    },
+    "laugh-spectral-2": {
+      "src": "assets/audio/laugh-spectral-2-short.mp3",
+      "volume": 0.65,
+      "sha256": "75fdfdb986b793e728a150343756fa2b4dab98a7da5eb877d1c268c9d5b392bb",
+      "creditId": "eldritch-grim",
+      "changes": "Short excerpt ending at a quiet laugh boundary; 120 ms tail fade. 2.74 seconds."
+    },
+    "laugh-spectral-3": {
+      "src": "assets/audio/laugh-spectral-3-short.mp3",
+      "volume": 0.65,
+      "sha256": "b70ea13ffc5a29a9183c2696444436857dd3707e3c527533dc156e876717bcb4",
+      "creditId": "eldritch-grim",
+      "changes": "Short laugh phrase with a gentle 300 ms tail fade; 1.69 seconds."
+    },
+    "treasure-1": {
+      "src": "assets/audio/treasure-natural-1.ogg",
+      "volume": 0.65,
+      "creditId": "spring-spring-coins",
+      "sha256": "a78bb9886cc79235adbee9bece30d891302903b50a9a58168eda2f32675fe643"
+    },
+    "treasure-2": {
+      "src": "assets/audio/treasure-natural-2.ogg",
+      "volume": 0.65,
+      "creditId": "spring-spring-coins",
+      "sha256": "4bb36b58da2a0fbe5438b86fb5dbffb68288a5e771fb2cb779fe32478cd7b4dc"
+    },
+    "treasure-3": {
+      "src": "assets/audio/treasure-natural-3.ogg",
+      "volume": 0.65,
+      "creditId": "spring-spring-coins",
+      "sha256": "9aeed029a18f277f96313619a482eca26145c81d2d7a43140f3195104db51f55"
+    },
+    "gloom-1": {
+      "src": "assets/audio/curse-ghost-whoosh-tight.mp3",
+      "volume": 0.5,
+      "duration": 1.7,
+      "creditId": "ghost-whoosh",
+      "sha256": "b825b6236d4962bbe476468c4408fcb00971acf57f3bbbe7a158cfcdf60d2128"
+    },
+    "gloom-2": {
+      "src": "assets/audio/curse-ghost-whoosh-tight.mp3",
+      "volume": 0.5,
+      "duration": 1.7,
+      "creditId": "ghost-whoosh",
+      "sha256": "b825b6236d4962bbe476468c4408fcb00971acf57f3bbbe7a158cfcdf60d2128"
+    },
+    "gloom-3": {
+      "src": "assets/audio/curse-ghost-whoosh-tight.mp3",
+      "volume": 0.5,
+      "duration": 1.7,
+      "creditId": "ghost-whoosh",
+      "sha256": "b825b6236d4962bbe476468c4408fcb00971acf57f3bbbe7a158cfcdf60d2128"
+    },
+    "siren-call": {
+      "src": "assets/audio/siren-call.ogg",
+      "volume": 0.65,
+      "creditId": "poots-mermaid",
+      "originalFile": "mermaid_song_03.ogg, first 3.2 seconds",
+      "sha256": "b44dc26f3940e3415a06e3d09b5b3f04ebc489a3472e0cbbedde31788043e370"
+    },
+    "treasure-4": {
+      "src": "assets/audio/treasure-natural-4.ogg",
+      "volume": 0.65,
+      "creditId": "spring-spring-coins+oiboo-chest",
+      "sha256": "3ce95737968013b20c372789adac4f0db08b13883a926bd1f5172eb9f5614bb5"
+    },
+    "treasure-5": {
+      "src": "assets/audio/treasure-natural-5.ogg",
+      "volume": 0.65,
+      "creditId": "spring-spring-coins+oiboo-chest",
+      "sha256": "32a14bed29d38160eb940233cd5f7bafa34cd6819b9dbdcfdf17aa76b2d324cc"
+    },
+    "parrot": {
+      "src": "assets/audio/parrot-selected-0.9s.wav",
+      "volume": 0.42,
+      "duration": 0.9,
+      "creditId": "parrot-user-selection",
+      "sha256": "6cbb6813466ac1ba7fddad78d31cef693b9ed1e480d05ad4e0d69ff0f93f7982"
+    }
+  },
+  "music": {
+    "src": "assets/audio/lord-of-the-land.mp3",
+    "volume": 0.25,
+    "loop": true
+  },
+  "files": {
+    "click": "assets/audio/click.ogg",
+    "draw": "assets/audio/draw.ogg",
+    "shuffle": "assets/audio/shuffle.ogg",
+    "token": "assets/audio/token.ogg",
+    "coins": "assets/audio/coins.ogg",
+    "creak": "assets/audio/creak.ogg",
+    "cannon": "assets/audio/cannon.ogg",
+    "whirlpool": "assets/audio/whirlpool-wave.flac",
+    "surge": "assets/audio/surge.ogg",
+    "curse": "assets/audio/curse-coin-runway.mp3",
+    "harbor": "assets/audio/harbor.wav",
+    "victory": "assets/audio/victory.wav",
+    "music": "assets/audio/lord-of-the-land.mp3",
+    "splash": "assets/audio/whirlpool.ogg"
+  },
+  "credits": [
+    {
+      "id": "kenney-casino",
+      "title": "Casino Audio",
+      "author": "Kenney",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://kenney.nlassets/casino-audio",
+      "downloadUrl": "https://kenney.nl/media/pagesassets/casino-audio/2472606a04-1721639069/kenney_casino-audio.zip"
+    },
+    {
+      "id": "kenney-rpg",
+      "title": "RPG Audio",
+      "author": "Kenney",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://kenney.nlassets/rpg-audio",
+      "downloadUrl": "https://kenney.nl/media/pagesassets/rpg-audio/8e99002d76-1677590336/kenney_rpg-audio.zip"
+    },
+    {
+      "id": "thimras",
+      "title": "Battle at sea",
+      "author": "Thimras",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://opengameart.org/content/battle-at-sea"
+    },
+    {
+      "id": "jaggedstone",
+      "title": "Magic Spell SFX",
+      "author": "JaggedStone",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://opengameart.org/content/magic-spell-sfx"
+    },
+    {
+      "id": "pwl",
+      "title": "Bell dings/chimes",
+      "author": "PWL",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://opengameart.org/content/bell-dingschimes"
+    },
+    {
+      "id": "fupi",
+      "title": "Correct Bell",
+      "author": "Fupi",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://opengameart.org/content/correct-bell"
+    },
+    {
+      "id": "transitking",
+      "title": "Water Waves",
+      "author": "transitking (submitted by qubodup)",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://opengameart.org/content/water-waves",
+      "downloadUrl": "https://opengameart.org/sites/default/files/wave_02_cc0-11505__transitking__wavesound.flac"
+    },
+    {
+      "id": "auravoice",
+      "title": "Evil Cackle Laugh 1 and 2",
+      "author": "AuraVoice / Nocturnal_Vanguard",
+      "license": "CC0 1.0",
+      "sourceUrl": "https://opengameart.org/content/evil-cackle-laugh-1"
+    },
+    {
+      "id": "antumdeluge",
+      "title": "Evil Laugh",
+      "author": "AntumDeluge",
+      "license": "CC0 1.0",
+      "sourceUrl": "https://opengameart.org/content/evil-laugh"
+    },
+    {
+      "id": "eldritch-grim",
+      "title": "Evil Laughs Pack",
+      "author": "Eldritch Grim",
+      "license": "CC0 1.0",
+      "sourceUrl": "https://opengameart.org/content/evil-laughs-pack"
+    },
+    {
+      "id": "runway-curses",
+      "title": "Cursed Coin, Cursed Idol, Cursed Spoils",
+      "author": "Generated for Treasure Tempest through Runway",
+      "sourceUrl": "https://runwayml.com",
+      "license": "Generated asset; use subject to the account\u2019s Runway terms."
+    },
+    {
+      "id": "parrot-cc0",
+      "title": "Parrots - Sulfur-crested Cockatoo",
+      "author": "TheKingOfGeeks360",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "sourceUrl": "https://freesound.org/people/TheKingOfGeeks360/sounds/844340/"
+    },
+    {
+      "id": "parrot-user-selection",
+      "title": "User-selected parrot squawk, first 0.9 seconds",
+      "sourceUrl": "https://www.youtube.com/watch?v=oZbmW-SHM_8",
+      "license": "Source video; no CC0 license verified",
+      "modifications": "First 0.9 seconds; original pitch and speed"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "mode": "built-in image_gen",
+  "map": {
+    "file": "fleet-map-simple.png",
+    "prompt": "Use case: stylized-concept. Asset type: background for a simple nautical board-game map. Generate a very wide landscape 3:2 image. Strictly flat vector-like illustration with solid color fills, crisp simple silhouettes, extremely low detail. The leftmost 25 percent is a sandy ivory/gold island coastline with three very simple straight geometric wooden dock piers reaching a little into the water. The entire remaining right 75 percent is uninterrupted flat dark deep teal ocean, with only a very few sparse tiny thin cream wave strokes near the image margins. Keep all of center and right free and empty for game ship icons. Limited palette only deep teal #12454b, navy #173339, warm ivory #f1e5bd and muted gold #bb8d49. Top-down nautical chart view; no perspective, no texture, no gradients, no realistic painting, no fine detail, no buildings, no rocks, no trees, no ships, no characters, no text, no UI, no labels, no borders, no markers, no compass, no decorative illustration. A calm minimal graphic map to match little cream and gold vector ship icons."
+  },
+  "siren": {
+    "file": "siren-icon.png",
+    "prompt": "Use case: stylized-concept. Asset type: tiny board-game siren icon to display at 64px. A single stylized woman mermaid with flowing deep-teal hair, ivory face and arms, tiny muted gold bodice and a curled teal fish tail with ivory fin accents, holding a tiny simple gold lyre. Simple flat vector-like nautical icon in ivory #f1e5bd, muted gold #bb8d49, deep teal #12454b, dark navy outlines. Icon silhouette first, only minimal geometric shapes and very few interior strokes, no texture or shading or gradients. Friendly elegant face suggested with only one tiny eye mark; no detailed face. Full body centered, compact readable silhouette, generous padding, genuinely transparent background with alpha, isolated cutout. No backdrop, no water, no pedestal, no circles, no badge, no text, no UI, no ornaments. Do not render checkerboard as pixels. Transparent PNG."
+  }
+}
