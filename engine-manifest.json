@@ -48,8 +48,9 @@
   "simulator.py": "96b6b62876f0c974489700961ef947f0f739aedb93d8f7a34e8cf6c24296fde4",
   "tournament.py": "e89e2cb0ceb3f6500486abda6f9609ce39216d7c3d66f9b2df26ee81242effeb",
   "webgame/__init__.py": "cc34bf29ded84a115d36ccad8f3699bcf85e3a20fe6aa94e359f3f2c78e2501d",
-  "webgame/expansion.py": "463969c45cbb959e74c6a17810af719404cb28c03ecfee87a5cfbe39bea10cff",
+  "webgame/expansion.py": "d6b88a2576c73286b9e3f4ddeec60532d3d3d8a806a4952bb27fc545a74277e8",
   "webgame/game.py": "13200ae7a62ffad802141db726f6120e8c8612fbd6768370210929472cf128a6",
+  "webgame/power_attribution.py": "a00e55652cde7b818b1b527d018533dc75eca14939e0254096cfae7b157c5740",
   "webgame/static/catalog.json": "2cc887a695a99c4982e6d914cc65d3a24486b81ad1c9c1365e1b268fb65cecdc",
   "browser_bridge.py": "3f4ebc8dab96489e728c508fca893a1e707bb99218ee9197b4c82a7985f676c3"
 }

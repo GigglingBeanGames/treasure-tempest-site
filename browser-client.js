@@ -10,7 +10,7 @@ function loading(text) {
 function hideLoading(){document.getElementById('engine-loading')?.remove()}
 function getWorker(){
   if(worker)return worker;
-  worker=new Worker(new URL('./engine-worker.js?v=horizon-18',import.meta.url),{type:'module'});
+  worker=new Worker(new URL('./engine-worker.js?v=stats-32',import.meta.url),{type:'module'});
   worker.onmessage=({data})=>{
     if(data.status){if(data.status!=='ready')loading(data.status);return}
     const job=pending.get(data.id);if(!job)return;
