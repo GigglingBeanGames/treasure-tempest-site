@@ -163,6 +163,7 @@ img[src*="cards-expansion/"]{aspect-ratio:9/14;object-fit:contain!important;bord
  .digit{--digit-h:72px;--digit-font:59px;width:53px}
  .pile-row{gap:35px}
 }
+
 @media(max-width:760px){.table-shell{grid-template-columns:68px minmax(0,1fr)}.side-route .side-stop:last-child{font-size:11px}}
 
 /* Storm, harbor, and sinking are readable at a glance. */
@@ -499,3 +500,30 @@ input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:tex
  .power-detail .power-results>p{margin:5px 0;font-size:11px;line-height:1.4}
  .power-detail>div>.ghost{margin-top:10px;padding:10px 14px;font-size:12px}
 }
+
+/* Portrait artwork follows the full profile height through the library button. */
+.card-detail.power-detail{grid-template-columns:280px minmax(0,1fr);align-items:stretch}
+.card-detail.power-detail>.power-art{width:280px;height:100%;min-height:0;max-height:none;aspect-ratio:auto;object-fit:cover!important;object-position:50% 22%!important;contain:size}
+.card-detail.power-detail>.power-art-cannoneer{object-position:50% 29%!important}
+.card-detail.power-detail>.power-art-cursed-captain{object-position:50% 31%!important}
+.card-detail.power-detail>.power-art-marooned-monarch{object-position:43% 27%!important}
+.card-detail.power-detail>.power-art-mechanic{object-position:50% 31%!important}
+.card-detail.power-detail>.power-art-merchant{object-position:42% 25%!important}
+.card-detail.power-detail>.power-art-navigator{object-position:50% 27%!important}
+.card-detail.power-detail>.power-art-parrot-whisperer{object-position:50% 24%!important}
+.card-detail.power-detail>.power-art-sea-witch{object-position:50% 20%!important}
+.card-detail.power-detail>.power-art-siren-queen{object-position:42% 23%!important}
+.card-detail.power-detail>.power-art-storm-swindler{object-position:50% 19%!important}
+.card-detail.power-detail>.power-art-storm-warden{object-position:50% 34%!important}
+.card-detail.power-detail>.power-art-tide-watcher{object-position:52% 26%!important}
+.card-detail.power-detail>.power-art-undead-admiral{object-position:50% 27%!important}
+.power-detail .power-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+.power-detail .power-metrics.metric-count-1{grid-template-columns:minmax(0,1fr);max-width:180px}
+.power-detail .power-metrics.metric-count-2{grid-template-columns:repeat(2,minmax(0,1fr));max-width:360px}
+.power-detail-tide-watcher .power-metrics{grid-template-columns:repeat(5,minmax(0,1fr));gap:5px;max-width:none}
+.power-detail-tide-watcher .power-metrics>div{padding:8px 2px;gap:4px}
+.power-detail-tide-watcher .power-metrics strong{font-size:18px}
+.power-detail-tide-watcher .power-metrics span{font-size:8px;line-height:1.25}
+.side-route .side-stop:active:not(:disabled){transform:translate(-50%,-50%)}
+.side-route .side-stop.current:active:not(:disabled){transform:translate(-50%,-50%) scale(1.06)}
+@media(max-width:760px){.card-detail.power-detail{grid-template-columns:minmax(0,1fr);align-items:start}.card-detail.power-detail>.power-art{width:min(210px,70vw);height:auto;max-width:210px;aspect-ratio:3/4;object-fit:cover!important}}

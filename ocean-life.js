@@ -1,4 +1,4 @@
-import {playbackDuration} from './playback.js?v=stats-32';
+import {playbackDuration} from './playback.js?v=stats-35';
 // Decorative, local-only physics. No game state, score or random seed is touched.
 const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
 let ocean=null,serial=0;
@@ -37,7 +37,7 @@ export function attachOcean(board,key,onChestPop=()=>{}){
  o.frame=requestAnimationFrame(tick);
 }
 function obstacles(o){const br=o.board.getBoundingClientRect();return [...o.board.querySelectorAll('.fleet-ship,.map-rowboat:not(.cashed-boat)')].filter(e=>!e.classList.contains('being-swallowed')).map(el=>{const r=el.getBoundingClientRect();return{x:r.left-br.left+r.width/2,y:r.top-br.top+r.height/2,r:Math.min(r.width,r.height)*.5+3,vx:0,vy:0}})}
-function mount(p,o,fade){const el=document.createElement('div');el.className='flotsam'+(p.kind<8?' treasure-flotsam':'')+(fade?' fresh-flotsam':'');el.dataset.flotsam=String(p.id);el.dataset.kind=names[p.kind];el.style.width=p.size+'px';el.style.height=p.size+'px';el.innerHTML=`<img src="assets/flotsam/${names[p.kind]}.${p.kind===8?'svg':'png'}" alt="" draggable="false"><i class="treasure-gleam" aria-hidden="true"></i>`;el.setAttribute('aria-hidden','true');o.layer.appendChild(el);p.el=el;
+function mount(p,o,fade){const el=document.createElement('div');el.className='flotsam'+(p.kind<8?' treasure-flotsam':'')+(fade?' fresh-flotsam':'');el.dataset.flotsam=String(p.id);el.dataset.kind=names[p.kind];el.style.width=p.size+'px';el.style.height=p.size+'px';const src=new URL(`./assets/flotsam/${names[p.kind]}.${p.kind===8?'svg':'png'}`,import.meta.url).href;el.innerHTML=`<img src="${src}" alt="" draggable="false"><i class="treasure-gleam" aria-hidden="true"></i>`;el.setAttribute('aria-hidden','true');o.layer.appendChild(el);p.el=el;el.querySelector('img').addEventListener('error',()=>remove(o,p),{once:true});
  el.onpointerdown=e=>{if(o.mode||p.claimed)return;e.preventDefault();p.drag=e.pointerId;el.setPointerCapture(e.pointerId);el.classList.add('dragging-flotsam');p.vx=p.vy=0};
  el.onpointermove=e=>{if(p.drag!==e.pointerId)return;const r=o.board.getBoundingClientRect();p.x=clamp(e.clientX-r.left,r.width*.29+p.size/2,r.width-p.size/2);p.y=clamp(e.clientY-r.top,p.size/2,r.height-p.size/2);solve(o);paint(p,o,performance.now());};
  const release=e=>{if(p.drag!==e.pointerId)return;p.drag=null;if(e.type==='pointerup'&&unlockChest(o,p))return;el.classList.remove('dragging-flotsam');p.vx=(Math.random()-.5)*6;p.vy=(Math.random()-.5)*4};el.onpointerup=release;el.onpointercancel=release;el.onlostpointercapture=release;paint(p,o,performance.now());}

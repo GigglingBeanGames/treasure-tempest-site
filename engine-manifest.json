@@ -34,7 +34,7 @@
   "powers/expansion_v3_20260926.py": "f9343b531efc5504f292b4f736d8efd02c7ff2a237f08e5963bdca5a67fc79b9",
   "powers/expansion_v4_20260926.py": "83f3941f92f617471e37883e40d9bfb86cfa4aa76a9e9d44b0da9bb691a63f45",
   "powers/expansion_v5_20260926.py": "d4c348a93dcf9e4357196c0fc171993904023ecd2ca936a1b799012c160a23be",
-  "powers/expansion_v6_20260926.py": "5a9fb1ec12703ee5e756df478035517e6ab3802123962f33cc23987989017cde",
+  "powers/expansion_v6_20260926.py": "0370c46be6958fc932b8305ac0720d89e128891964fec14b7b185cd8325a906c",
   "powers/locked/sea_witch_bot.json": "dc0096aa9147f7fd042b8f1b5d19cdfd734bdf56ef53d39a398a924f16856a6a",
   "powers/multi.py": "bb28ff100fec18f1a868e2352c7e79f7e8ddf715cd03694b9cc3d2aac23b1701",
   "powers/revision2.py": "110c6d06821378b70a8dd3201a84d7a42cdb2fc9498b818f0a23724cec491c0b",
@@ -48,9 +48,9 @@
   "simulator.py": "96b6b62876f0c974489700961ef947f0f739aedb93d8f7a34e8cf6c24296fde4",
   "tournament.py": "e89e2cb0ceb3f6500486abda6f9609ce39216d7c3d66f9b2df26ee81242effeb",
   "webgame/__init__.py": "cc34bf29ded84a115d36ccad8f3699bcf85e3a20fe6aa94e359f3f2c78e2501d",
-  "webgame/expansion.py": "d6b88a2576c73286b9e3f4ddeec60532d3d3d8a806a4952bb27fc545a74277e8",
-  "webgame/game.py": "13200ae7a62ffad802141db726f6120e8c8612fbd6768370210929472cf128a6",
-  "webgame/power_attribution.py": "a00e55652cde7b818b1b527d018533dc75eca14939e0254096cfae7b157c5740",
+  "webgame/expansion.py": "3b5632340cf2cb62dfc5eacecc603189f58d1d303a6baed21cb05d814c543e9a",
+  "webgame/game.py": "378230be1caa001aa940208e591251389ca6eb5535cd64dfaf1a157f4275b502",
+  "webgame/power_attribution.py": "6d92b51eee17d938fc96563e05c7fe130b7d0b264727a02412a57c2d12512160",
   "webgame/static/catalog.json": "2cc887a695a99c4982e6d914cc65d3a24486b81ad1c9c1365e1b268fb65cecdc",
   "browser_bridge.py": "3f4ebc8dab96489e728c508fca893a1e707bb99218ee9197b4c82a7985f676c3"
 }
