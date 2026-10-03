@@ -8,47 +8,47 @@
     {
       "name": "Merchant",
       "lives": 6,
-      "description": "Earn 25 gold each time you harbor. Remaining ships sell for 60 gold each."
+      "description": "Earn 20 gold each time you harbor. Remaining ships sell for 60 gold each."
     },
     {
       "name": "Siren Queen",
       "lives": 7,
-      "description": "Collect everyone\u2019s enchanted cards. Gain ships for pairs at round end. Ignore hazards and harbor freely during Siren\u2019s Song."
+      "description": "Collect enchanted cards drawn by you and your immediate neighbors. Gain ships for pairs. Ignore hazards during Siren\u2019s Song, when you cannot harbor."
     },
     {
       "name": "Undead Admiral",
       "lives": 6,
-      "description": "Plunder sinking captains. After you harbor, curses take 10 extra gold from the pot."
+      "description": "Start with no Plunder tokens; gain one in rounds 6 and 11. Each can claim half the pot when another captain sinks."
     },
     {
       "name": "Mechanic",
       "lives": 6,
-      "description": "Three repair tokens save ships. Sell repairs for 100 gold. Ignore Broken Rudder."
+      "description": "Three repair tokens save ships. Sell repairs for 150 gold. Ignore Broken Rudder."
     },
     {
       "name": "Tide Watcher",
       "lives": 6,
-      "description": "Take a secret card each round. Keep its treasure or place it atop the deck at the right moment."
+      "description": "Take a secret card each round. Wild Wave grants a Tide token outside Calm Waters; each is worth 15 gold at game end."
     },
     {
       "name": "Navigator",
       "lives": 6,
-      "description": "Five tokens protect you for four draws. While sailing, choose which of the last two cards any Echo copies."
+      "description": "Five tokens protect you for three draws. While sailing, choose which of the last two cards any Echo copies."
     },
     {
       "name": "Cannoneer",
       "lives": 7,
-      "description": "Fire cannon tokens to force captains to harbor. Alone in the storm, your treasures are doubled."
+      "description": "Start with no tokens; gain them from Cannon Fire. Spend them to force harboring. Alone, your treasures are doubled."
     },
     {
       "name": "Blood Sailor",
       "lives": 6,
-      "description": "Earn 35 gold when a starting neighbor sinks. Gain a life when each loses their last ship."
+      "description": "Earn 40 gold when a starting neighbor sinks. Gain a life the first time each falls to exactly one ship."
     },
     {
       "name": "Storm Warden",
-      "lives": 6,
-      "description": "Three Warden tokens each save half the pot when you sink. Stack with Escape Ship or Marooned."
+      "lives": 7,
+      "description": "Start with 7 ships and 3 Warden tokens. Each can save half the pot when you sink; unused tokens are worth 10 gold."
     },
     {
       "name": "Cursed Captain",
@@ -58,26 +58,26 @@
     {
       "name": "Parrot Whisperer",
       "lives": 6,
-      "description": "Start with two tokens. Gain one for every Prophecy drawn. Spend tokens to arrange the next two cards."
+      "description": "Start with four tokens. Gain one for every Prophecy drawn. Spare tokens are worth 15 gold."
     },
     {
       "name": "Sea Witch",
       "lives": 6,
-      "description": "Gather Hexes to gain gold and curse your rivals. Heart tokens save your ships."
+      "description": "Each Hex gives you 25 gold and takes 10 from every rival. Heart tokens save your ships."
     },
     {
       "name": "Ghost Captain",
       "lives": 1,
-      "description": "Your only ship is indestructible. Earn 30 gold whenever you sink."
+      "description": "Your only ship is indestructible. Earn 50 gold whenever you sink."
     },
     {
       "name": "Marooned Monarch",
       "lives": 6,
-      "description": "Ignore Marooned. Earn 60 gold whenever another captain is marooned."
+      "description": "Ignore Marooned. Earn 100 gold whenever another captain is marooned."
     },
     {
       "name": "Storm Swindler",
-      "lives": 6,
+      "lives": 7,
       "description": "Claim the first treasure outside safe waters each round. It pays you instead of the pot."
     }
   ],

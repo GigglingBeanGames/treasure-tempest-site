@@ -1,4 +1,4 @@
-import {playbackDuration} from './playback.js?v=stats-35';
+import {playbackDuration} from './playback.js?v=stable-36';
 // Decorative, local-only physics. No game state, score or random seed is touched.
 const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
 let ocean=null,serial=0;

@@ -5,13 +5,13 @@ export const expansionCards = {
  fortune: {name:'Lost Fortune', rule:'Add 200 gold to the shared treasure chest. It is a treasure, including during safe waters.'}
 };
 export const updatedPowerRules = {
- 'Merchant':'Start with 6 ships. Gain 25 extra gold each time you harbor. Each ship remaining at game end is worth 60 gold instead of 30.',
- 'Siren Queen':'Start with 7 ships. Every Enchanted Key and Chest drawn by anyone outside safe waters comes to you, even after you leave the round. Their normal effects still happen. At round end gain one ship per Key–Chest pair, up to 8 ships total, then return ALL collected cards to the deck. Echo copies count. You may harbor during Siren’s Song and are immune to hazards while the Song is active. No necklace bonus.',
+ 'Merchant':'Start with 6 ships. Gain 20 extra gold each time you harbor. Each ship remaining at game end is worth 60 gold instead of 30.',
+ 'Siren Queen':'Start with 7 ships. Collect Enchanted Keys and Chests drawn by you or either immediate neighbor outside safe waters. Their normal effects still happen. Each Key–Chest pair immediately restores one ship, up to 8 ships. Unmatched cards remain with you between rounds. You cannot voluntarily harbor during Siren’s Song, but you are immune to hazards while it lasts. No necklace bonus.',
  'Cursed Captain':'Start with 6 ships. Collect the first two curses drawn by anyone outside safe waters each round: Cursed Coin is worth 10 gold, Cursed Idol 50, Cursed Spoils 100. No swapping; later curses are discarded normally. Your own curse draws never subtract from the pot, even after you collect two. Everyone else’s curse draws still do. Collected cards return at round end.',
- 'Sea Witch':'Start with 6 ships and no tokens. Whenever anyone draws a curse outside safe waters while you remain in the storm, gain a Hex token: you immediately gain 10 gold and every rival immediately loses 10 gold. Whenever anyone draws Heart of the Sea outside safe waters, gain a Heart token, up to 3 held—even after you leave the round. When sinking, spend one Heart token to save your ship; you still leave and lose gold normally. Spare Heart tokens are worth 10 gold each.',
- 'Ghost Captain':'Start with one indestructible ship. You can never lose it or be eliminated. Sinking still removes you from the round with the usual gold loss or Marooned recovery, then gives you 30 extra gold. Your remaining ship is worth 30 gold at game end.',
- 'Marooned Monarch':'Start with 6 ships. You are immune to Marooned. Gain 60 gold whenever another captain is actually marooned, even after you leave the round. A saved or repaired ship still triggers this reward; a blocked Marooned does not.',
- 'Storm Swindler':'Start with 6 ships. Take the first treasure drawn by anyone outside safe waters each round—even if you have already left. It adds nothing to the pot. Keep it face up beside your power and receive its printed value at round end, then return it to the deck. Echo copies count. Tide Watcher’s setup treasure is separate. Tempest Trick remains the normal 20 gold.'
+ 'Sea Witch':'Start with 6 ships and no tokens. Whenever anyone draws a curse outside safe waters while you remain in the storm, gain a Hex token: you immediately gain 25 gold and every rival immediately loses 10 gold. Whenever anyone draws Heart of the Sea outside safe waters, gain a Heart token, up to 3 held—even after you leave the round. When sinking, spend one Heart token to save your ship; you still leave and lose gold normally. Spare Heart tokens are worth 10 gold each.',
+ 'Ghost Captain':'Start with one indestructible ship. You can never lose it or be eliminated. Sinking still removes you from the round with the usual gold loss or Marooned recovery, then gives you 50 extra gold. Your remaining ship is worth 30 gold at game end.',
+ 'Marooned Monarch':'Start with 6 ships. You are immune to Marooned. Gain 100 gold whenever another captain is actually marooned, even after you leave the round. A saved or repaired ship still triggers this reward; a blocked Marooned does not.',
+ 'Storm Swindler':'Start with 7 ships. Take the first treasure drawn by anyone outside safe waters each round—even if you have already left. It adds nothing to the pot. Keep it face up beside your power and receive its printed value at round end, then return it to the deck. Echo copies count. Tide Watcher’s setup treasure is separate. Tempest Trick remains the normal 20 gold.'
 };
 export const newVictoryLines = {
  'Sea Witch':'Every curse has finally paid its debt.',
@@ -21,5 +21,5 @@ export const newVictoryLines = {
 };
 export function witchTokens(player) {
  if(player.power!=='Sea Witch')return '';
- return `<div class="witch-tokens"><span title="Each Hex immediately gives you 10 gold and takes 10 from every rival">✦ ${player.hexTokens||0} Hex</span><span title="Spend a Heart token when sinking to save your ship">♥ ${player.heartTokens||0}/3 Heart</span></div>`;
+ return `<div class="witch-tokens"><span title="Each Hex immediately gives you 25 gold and takes 10 from every rival">✦ ${player.hexTokens||0} Hex</span><span title="Spend a Heart token when sinking to save your ship">♥ ${player.heartTokens||0}/3 Heart</span></div>`;
 }

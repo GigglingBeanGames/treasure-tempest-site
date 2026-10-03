@@ -1,7 +1,7 @@
-import {playbackDuration} from './playback.js?v=stats-35';
+import {playbackDuration} from './playback.js?v=stable-36';
 // Re-export the map lifecycle so every effect shares one ocean instance.
-export {attachOcean,pullOcean} from './ocean-life.js?v=stats-35';
-import {sweepOcean,reserveTreasures} from './ocean-life.js?v=stats-35';
+export {attachOcean,pullOcean} from './ocean-life.js?v=stable-36';
+import {sweepOcean,reserveTreasures} from './ocean-life.js?v=stable-36';
 // Presentation only. These animations never change a game decision or reward.
 const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
 const pause=ms=>new Promise(r=>setTimeout(r,reduced()?0:playbackDuration(ms)));
