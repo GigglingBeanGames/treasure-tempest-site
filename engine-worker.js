@@ -3,7 +3,7 @@ let engine;
 async function prepare() {
   self.postMessage({status:'Preparing the captains…'});
   const py = await loadPyodide({indexURL:new URL('./runtime/',import.meta.url).href});
-  const response = await fetch(new URL('./engine.zip?v=stable-36',import.meta.url),{cache:'no-cache'});
+  const response = await fetch(new URL('./engine.zip?v=stable-37',import.meta.url),{cache:'no-cache'});
   if (!response.ok) throw new Error('The game files could not be loaded. Please try again.');
   py.FS.mkdir('/game');
   py.FS.chdir('/game');
