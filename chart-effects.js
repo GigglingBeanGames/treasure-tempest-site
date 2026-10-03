@@ -7,7 +7,7 @@ const reduced=()=>matchMedia('(prefers-reduced-motion: reduce)').matches;
 const pause=ms=>new Promise(r=>setTimeout(r,reduced()?0:playbackDuration(ms)));
 const animate=async(el,frames,ms=600,extra={})=>{if(!el||!el.isConnected)return;if(reduced()){Object.assign(el.style,frames.at(-1));return}try{const a=el.animate(frames,{duration:playbackDuration(ms),easing:'cubic-bezier(.25,.65,.25,1)',fill:'forwards',...extra});await a.finished;return a}catch{}};
 const point=(el,board)=>{const r=el.getBoundingClientRect(),b=board.getBoundingClientRect();return{x:r.left-b.left+r.width/2,y:r.top-b.top+r.height/2}};
-export const dockY=[12,22,42,52,72,82];
+export const dockY=[9,20,31,42,53,64,75,86];
 export function rowboatsMarkup(g,order){return order.map((id,i)=>{
  const p=g.players[id],a=-Math.PI/2+i*2*Math.PI/order.length,charmed=g.song&&p.status==='active'&&p.power!=='Siren Queen',sx=71+(charmed?16:20)*Math.cos(a),sy=52+(charmed?22.4:28)*Math.sin(a),escape=p.held.some(c=>c.effect==='escape'),tricks=p.held.filter(c=>c.effect==='trick').length;
  const x=p.status==='active'?sx+5:p.status==='sunk'?24.5:10,y=p.status==='active'?sy+5:dockY[i];
@@ -55,8 +55,8 @@ function placeRowboatDocks(board){const w=board.clientWidth,h=board.clientHeight
  for(const boat of board.querySelectorAll('.map-rowboat')){
   if(boat.dataset.rowboat==='escape'&&boat.dataset.innerDock!=='true')continue;
   const berth=+boat.dataset.berthY||(+boat.dataset.y-3),slot=dockY.indexOf(berth);if(slot<0)continue;
-  const center=[152,417,680][Math.floor(slot/2)],half=boat.offsetHeight/2,pad=half+5;
-  const x=Math.max(boat.offsetWidth/2+5,340*k+ox,256*k+ox+boat.offsetWidth/2+6),y=Math.max(pad,Math.min(h-pad,(center+(slot%2?18:-18))*k+oy+(slot%2?pad:-pad)));
+  const center=[125,315,505,695][Math.floor(slot/2)],half=boat.offsetHeight/2,pad=half+5;
+  const x=Math.max(boat.offsetWidth/2+8,330*k+ox,256*k+ox+boat.offsetWidth/2+8),y=Math.max(pad,Math.min(h-pad,(center+(slot%2?20:-20))*k+oy+(slot%2?pad:-pad)));
   boat.dataset.x=String(x/w*100);boat.dataset.y=String(y/h*100);boat.dataset.approachX=String(Math.max(x+25,420*k+ox+boat.offsetWidth/2));boat.style.left=boat.dataset.x+'%';boat.style.top=boat.dataset.y+'%';
  }
 }

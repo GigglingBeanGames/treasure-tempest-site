@@ -551,3 +551,28 @@ input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:tex
 .handoff-card .primary{min-width:180px}
 .modal .choice-modal{max-width:720px;margin:auto}.choice-modal>h2,.choice-modal>p{text-align:center}.choice-modal .large-cards{flex-wrap:wrap;margin:18px auto}.choice-modal .choice-buttons{align-items:stretch}
 @media(max-width:760px){.game-layout>.opponents .captain:has(.captain-actions){grid-template-rows:64px 22px 38px 0 auto 42px}.captain-actions button{flex-basis:100%;font-size:8px;padding:6px 4px}.handoff-card img{width:78px;height:104px}.handoff-card h2{font-size:26px}}
+
+/* Keep every captain control inside its profile and every privacy screen clean. */
+.game-layout>.opponents{align-items:start}
+.game-layout>.opponents .captain:has(.captain-actions){min-height:244px;grid-template-rows:64px 22px 44px 0 minmax(42px,auto) 44px}
+.captain-head>div{min-width:0;width:100%}
+.captain-actions{width:100%;min-width:0;overflow:hidden}
+.captain-actions button{width:100%;max-width:100%;overflow:hidden;text-overflow:ellipsis;white-space:normal}
+.modal-backdrop{padding:clamp(10px,3vw,28px)}
+.modal{width:min(850px,calc(100vw - 20px));max-height:calc(100svh - 20px);box-sizing:border-box;overflow:auto}
+.choice-modal{width:100%;min-width:0;overflow:hidden}
+.choice-modal .large-cards img{width:min(150px,26vw);height:auto;max-height:34svh;object-fit:contain}
+.choice-modal .choice-buttons{grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr))}
+.choice-option{min-width:0;overflow:hidden}
+.choice-option .mini-preview{display:flex;justify-content:center;max-width:100%;overflow:hidden}
+.choice-option .mini-preview img{width:min(72px,20vw);height:auto}
+body:has(.handoff-shield) .travel-card,body:has(.handoff-shield) .moving-deck{opacity:0!important}
+.shared-countdown{margin-left:8px;padding:3px 7px;border:1px solid var(--line);border-radius:999px;color:var(--gold);font-size:10px;white-space:nowrap}
+.captain:has(.captain-chat){overflow:visible;position:relative;z-index:16}
+.captain-chat{position:absolute;z-index:30;left:50%;bottom:calc(100% + 10px);width:max-content;max-width:210px;transform:translateX(-50%);padding:8px 10px;border:1px solid var(--gold);border-radius:10px;background:#fff2cf;color:#102229;font-size:11px;line-height:1.35;box-shadow:0 7px 22px #0008;overflow-wrap:anywhere;animation:captainChat 9s both}
+.captain-chat:after{content:'';position:absolute;left:50%;bottom:-6px;width:10px;height:10px;transform:translateX(-50%) rotate(45deg);background:#fff2cf;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+/* The painted chart is a hard boundary: ships can approach its edge, never leave it. */
+.fleet-board{overflow:hidden}
+@media(max-width:700px){.game-layout>.opponents .captain:has(.captain-actions){min-height:220px;grid-template-rows:52px 18px 30px 0 minmax(38px,auto) 40px}.captain-chat{max-width:150px;font-size:10px}}
+@media(max-width:1400px){.pass-roster{grid-template-columns:minmax(0,1fr)}}
+@keyframes captainChat{0%{opacity:0;transform:translate(-50%,8px)}5%,82%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-5px)}}
