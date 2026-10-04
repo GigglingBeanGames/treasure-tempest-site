@@ -569,6 +569,7 @@ input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:tex
 body:has(.handoff-shield) .travel-card,body:has(.handoff-shield) .moving-deck{opacity:0!important}
 .shared-countdown{margin-left:8px;padding:3px 7px;border:1px solid var(--line);border-radius:999px;color:var(--gold);font-size:10px;white-space:nowrap}
 .captain:has(.captain-chat){overflow:visible;position:relative;z-index:16}
+.game-layout>.opponents .captain:has(.captain-chat){overflow:visible;position:relative;z-index:16}
 .captain-chat{position:absolute;z-index:30;left:50%;bottom:calc(100% + 10px);width:max-content;max-width:210px;transform:translateX(-50%);padding:8px 10px;border:1px solid var(--gold);border-radius:10px;background:#fff2cf;color:#102229;font-size:11px;line-height:1.35;box-shadow:0 7px 22px #0008;overflow-wrap:anywhere;animation:captainChat 9s both}
 .captain-chat:after{content:'';position:absolute;left:50%;bottom:-6px;width:10px;height:10px;transform:translateX(-50%) rotate(45deg);background:#fff2cf;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold)}
 /* The painted chart is a hard boundary: ships can approach its edge, never leave it. */
