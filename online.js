@@ -1,12 +1,19 @@
 const API='https://treasure-tempest-online.treasure-tempest-online.workers.dev';
 const $=s=>document.querySelector(s),app=$('#app'),connection=$('#connection');
 let credential=localStorage.getItem('tt-online-credential')||'',account=null,catalog=[],socket=null,room=null,roomId='',timer=null,lobbyDraft=null;
+let lobbyMusic=null;
 const deviceId=localStorage.getItem('tt-device-id')||crypto.randomUUID();localStorage.setItem('tt-device-id',deviceId);
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+async function prepareLobbyMusic(){
+ try{const playlist=await fetch('assets/audio/playlist.json',{cache:'no-cache'}).then(r=>r.json()),selected=localStorage.getItem('tt-song')||playlist.default,track=playlist.tracks.find(t=>t.id===selected)||playlist.tracks.find(t=>t.id===playlist.default)||playlist.tracks[0];if(!track)return;lobbyMusic=new Audio(track.src);lobbyMusic.loop=true;lobbyMusic.preload='auto';lobbyMusic.volume=Math.max(0,Math.min(1,Number(localStorage.getItem('tt-music-volume')??.25)));lobbyMusic.play().catch(()=>{})}catch{}
+}
+function unlockLobbyMusic(){if(lobbyMusic?.paused&&lobbyMusic.volume>0)lobbyMusic.play().catch(()=>{})}
+document.addEventListener('pointerdown',unlockLobbyMusic,{passive:true});
+document.addEventListener('keydown',unlockLobbyMusic);
 function toast(text){const e=$('#toast');e.textContent=text;e.classList.add('show');setTimeout(()=>e.classList.remove('show'),2800)}
 async function api(path,options={}){const headers={'Content-Type':'application/json',...(options.headers||{})};if(credential)headers.Authorization=`Bearer ${credential}`;const r=await fetch(API+path,{...options,headers});const data=await r.json().catch(()=>({error:'The online harbor did not answer.'}));if(!r.ok)throw new Error(data.error||'Request failed.');return data}
 function image(power){return power==='Pirate'?'assets/pirate-profile-default.png':`assets/powers-expansion/${power.toLowerCase().replaceAll(' ','_')}.webp`}
-async function boot(){catalog=(await fetch('catalog.json').then(r=>r.json())).powers;if(credential){try{account=await api('/api/account/me')}catch{credential='';localStorage.removeItem('tt-online-credential')}}const requested=new URLSearchParams(location.search).get('room');if(account&&requested){roomId=requested.toUpperCase();connectRoom()}else account?home():signIn()}
+async function boot(){prepareLobbyMusic();catalog=(await fetch('catalog.json').then(r=>r.json())).powers;if(credential){try{account=await api('/api/account/me')}catch{credential='';localStorage.removeItem('tt-online-credential')}}const requested=new URLSearchParams(location.search).get('room');if(account&&requested){roomId=requested.toUpperCase();connectRoom()}else account?home():signIn()}
 function signIn(){app.innerHTML=`<section class="panel hero"><img class="avatar profile-circle" src="${image('Pirate')}" alt="Pirate profile icon"><div class="muted">ONE CAPTAIN PER DEVICE</div><h1>ONLINE VOYAGES</h1><p>Choose a unique captain name. No email or password is required.</p><div class="stack"><input id="username" maxlength="20" placeholder="Captain name"><button class="primary" data-act="create-account">Create captain</button><button data-act="show-recover">Recover an existing captain</button><a href="index.html" class="muted">Return to offline play</a></div></section>`}
 function recoveryForm(){app.innerHTML=`<section class="panel hero"><h1>Recover captain</h1><div class="stack"><input id="username" maxlength="20" placeholder="Captain name"><input id="recovery" placeholder="XXXX-XXXX-XXXX-XXXX"><button class="primary" data-act="recover">Recover on this device</button><button data-act="signin">Back</button></div></section>`}
 function saveAuth(data){credential=data.credential;account=data.account;localStorage.setItem('tt-online-credential',credential);home()}
