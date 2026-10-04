@@ -531,7 +531,7 @@ input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:tex
 .side-route .side-stop:active:not(:disabled){transform:translate(-50%,-50%)}
 .side-route .side-stop.current:active:not(:disabled){transform:translate(-50%,-50%) scale(1.06)}
 @media(max-width:760px){.card-detail.power-detail{grid-template-columns:minmax(0,1fr);align-items:start}.card-detail.power-detail>.power-art{width:min(210px,70vw);height:auto;max-width:210px;aspect-ratio:3/4;object-fit:cover!important}}
-.home-actions{display:flex;gap:12px;align-items:center;justify-content:center;flex-wrap:wrap}.online-link{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border:1px solid var(--gold,#d7ad62);border-radius:8px;color:#f6e7c4;text-decoration:none;font-weight:800;background:rgba(7,31,39,.72)}.online-link:hover{transform:translateY(-1px);background:rgba(20,59,67,.9)}
+.home-actions{display:flex;gap:12px;align-items:center;justify-content:flex-start;flex-wrap:wrap}.online-link{display:inline-flex;align-items:center;gap:8px;padding:14px 24px;border:1px solid var(--gold,#d7ad62);border-radius:8px;color:#f6e7c4;text-decoration:none;font-weight:800;background:rgba(7,31,39,.72)}.online-link:hover{transform:translateY(-1px);background:rgba(20,59,67,.9)}
 .setup-columns>section{min-width:0}.pass-roster{grid-template-columns:repeat(2,minmax(0,1fr))}.pass-seat{grid-template-columns:minmax(76px,.55fr) minmax(0,.9fr) minmax(0,1.25fr);width:100%;overflow:hidden}.pass-seat input,.pass-seat select{width:100%;max-width:100%}.local-harbor-row{display:flex;flex-wrap:wrap;gap:8px;width:100%;justify-content:center}.local-harbor-row .harbor-button{min-width:min(190px,100%)}.online-game-chat{max-height:45vh;overflow:auto;padding:12px;border:1px solid var(--line);background:#04171d}.online-game-chat p{margin:8px 0}.online-game-chat strong{color:var(--gold);margin-right:8px}.online-chat-send{display:flex;gap:10px;margin-top:16px}.online-chat-send input{flex:1;min-width:0;padding:12px;background:#04171d;border:1px solid var(--line);color:var(--text)}
 
 /* Shared-device actions belong to their captain instead of overflowing the command bar. */
@@ -572,7 +572,11 @@ body:has(.handoff-shield) .travel-card,body:has(.handoff-shield) .moving-deck{op
 .captain-chat{position:absolute;z-index:30;left:50%;bottom:calc(100% + 10px);width:max-content;max-width:210px;transform:translateX(-50%);padding:8px 10px;border:1px solid var(--gold);border-radius:10px;background:#fff2cf;color:#102229;font-size:11px;line-height:1.35;box-shadow:0 7px 22px #0008;overflow-wrap:anywhere;animation:captainChat 9s both}
 .captain-chat:after{content:'';position:absolute;left:50%;bottom:-6px;width:10px;height:10px;transform:translateX(-50%) rotate(45deg);background:#fff2cf;border-right:1px solid var(--gold);border-bottom:1px solid var(--gold)}
 /* The painted chart is a hard boundary: ships can approach its edge, never leave it. */
-.fleet-board{overflow:hidden}
+.fleet-board{overflow:visible}
+.ship-number.bot-label{font-size:7px;letter-spacing:.1em;padding:1px 3px;min-width:0}
+.fleet-ship:focus .ship-bubble{opacity:1;transform:translate(-50%,0)}
+.quick-chat{display:grid;grid-template-columns:repeat(8,minmax(38px,1fr));gap:7px;margin:14px 0}.quick-chat button{font-size:22px;line-height:1;padding:10px 5px;min-width:0}.online-chat-send{display:flex;gap:9px}.online-chat-send input{min-width:0;flex:1}
+@media(max-width:560px){.quick-chat{grid-template-columns:repeat(4,1fr)}}
 @media(max-width:700px){.game-layout>.opponents .captain:has(.captain-actions){min-height:220px;grid-template-rows:52px 18px 30px 0 minmax(38px,auto) 40px}.captain-chat{max-width:150px;font-size:10px}}
 @media(max-width:1400px){.pass-roster{grid-template-columns:minmax(0,1fr)}}
 @keyframes captainChat{0%{opacity:0;transform:translate(-50%,8px)}5%,82%{opacity:1;transform:translate(-50%,0)}100%{opacity:0;transform:translate(-50%,-5px)}}
