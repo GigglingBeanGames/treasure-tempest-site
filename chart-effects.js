@@ -61,4 +61,4 @@ function placeRowboatDocks(board){const w=board.clientWidth,h=board.clientHeight
  }
 }
 
-export async function spyglassEffect(e,back,sound){const plan={...e,spyglass:true};await dealProphecy(plan,back,sound);await pause(450);await returnProphecy(plan,back,sound);}
+export async function spyglassEffect(e,back,sound){const plan={...e,count:e.count||10,spyglass:true};await dealProphecy(plan,back,sound);await pause(450);await returnProphecy(plan,back,sound);}

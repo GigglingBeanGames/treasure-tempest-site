@@ -567,6 +567,9 @@ input,textarea,[contenteditable="true"]{-webkit-user-select:text;user-select:tex
 .choice-option .mini-preview{display:flex;justify-content:center;max-width:100%;overflow:hidden}
 .choice-option .mini-preview img{width:min(72px,20vw);height:auto}
 body:has(.handoff-shield) .travel-card,body:has(.handoff-shield) .moving-deck{opacity:0!important}
+body:has(.choice-modal)>.travel-card,body:has(.choice-modal)>.moving-deck{opacity:0!important}
+.online-game .opponents .portrait-button img{transform:scale(1.35);transform-origin:center 30%}
+.online-game .opponents .portrait-button img[src*="ghost_captain"]{transform:scale(1.35) scaleX(-1)}
 .shared-countdown{margin-left:8px;padding:3px 7px;border:1px solid var(--line);border-radius:999px;color:var(--gold);font-size:10px;white-space:nowrap}
 .captain:has(.captain-chat){overflow:visible;position:relative;z-index:16}
 .game-layout>.opponents .captain:has(.captain-chat){overflow:visible;position:relative;z-index:16}
