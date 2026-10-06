@@ -83,7 +83,8 @@ function startOnlineTimer(){
     button.textContent=pending?'Resolving…':locked>0?`${base} · ${Math.ceil(locked/1000)}s`:left>0?`${base} · ${Math.ceil(left/1000)}s`:base;
    }
   });
-  if(!pending&&onlineRoomState?.turnDeadline&&now>=onlineRoomState.turnDeadline){const key=state.request.id+':'+onlineRoomState.turnDeadline;if(onlineTickKey!==key){onlineTickKey=key;onlineSend({type:'tick',requestId:state.request.id})}}
+  const liveTurn=['turn','bot-turn','online-turn','waiting','bot-waiting'].includes(kind),deadline=onlineRoomState?.turnDeadline||0;
+  if(!pending&&liveTurn&&(!deadline||now>=deadline)){const key=state.request.id+':'+(deadline||'repair');if(onlineTickKey!==key){onlineTickKey=key;onlineSend({type:'tick',requestId:state.request.id})}}
  };
  update();onlineTimer=setInterval(update,150)
 }
