@@ -3,6 +3,7 @@
 body{margin:0;min-height:100vh;background:linear-gradient(#05212d99,#061a24ee),url('assets/table.png') center/cover fixed}
 .top{height:72px;padding:0 clamp(18px,4vw,56px);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);background:#061a24e8}
 .brand{font-weight:900;letter-spacing:.08em;color:var(--ink);text-decoration:none}
+.brand-button{border:0;background:transparent;padding:0;border-radius:0}
 .brand span,h1,h2{color:var(--gold)}
 .pill{padding:8px 13px;border:1px solid var(--line);border-radius:999px;font-size:13px}
 .pill.live{background:#174a3b}
@@ -59,7 +60,7 @@ label{display:grid;gap:6px;color:var(--muted)}
 .portrait-choice img{width:82px;height:82px;border-radius:50%;object-fit:contain;background:#0b2d38}
 .portrait-choice span{font-size:11px}
 .portrait-choice.selected{outline:4px solid var(--gold);background:#245463;box-shadow:0 0 24px #f3c76555}
-.avatar-button{border:0;background:transparent;padding:3px;border-radius:50%}
+.avatar-button{width:82px;height:82px;aspect-ratio:1;display:grid;place-items:center;line-height:0;border:0;background:transparent;padding:5px;border-radius:50%}
 .avatar-button:hover,.avatar-button:focus-visible{outline:3px solid var(--gold)}
 .avatar-button .profile-circle{object-fit:contain!important}
 .stat-card{text-align:left;color:var(--ink);border-color:var(--line)}
