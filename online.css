@@ -56,8 +56,17 @@ label{display:grid;gap:6px;color:var(--muted)}
 .profile-circle{width:72px!important;height:72px!important;border-radius:50%!important;border:2px solid var(--gold);object-fit:cover!important;object-position:center 12%!important;background:#0b2d38}
 .portrait-picker{display:grid;grid-template-columns:repeat(auto-fill,minmax(92px,1fr));gap:12px}
 .portrait-choice{display:grid;gap:7px;justify-items:center;padding:8px}
-.portrait-choice img{width:62px;height:62px;border-radius:50%;object-fit:cover;object-position:center 12%;background:#0b2d38}
+.portrait-choice img{width:82px;height:82px;border-radius:50%;object-fit:contain;background:#0b2d38}
 .portrait-choice span{font-size:11px}
+.portrait-choice.selected{outline:4px solid var(--gold);background:#245463;box-shadow:0 0 24px #f3c76555}
+.avatar-button{border:0;background:transparent;padding:3px;border-radius:50%}
+.avatar-button:hover,.avatar-button:focus-visible{outline:3px solid var(--gold)}
+.avatar-button .profile-circle{object-fit:contain!important}
+.stat-card{text-align:left;color:var(--ink);border-color:var(--line)}
+.stat-card strong{display:block;font-size:30px;color:var(--gold)}
+.stat-card:hover{border-color:var(--gold);transform:translateY(-2px)}
+.stat-line{display:flex;justify-content:space-between;align-items:center;gap:15px}
+.stat-line strong{font-size:24px;color:var(--gold)}
 .badge-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
 .achievement{display:grid;grid-template-columns:64px 1fr;gap:14px;align-items:center;padding:15px;border:1px solid var(--line);border-radius:13px;background:#092c3a}
 .achievement p{margin:5px 0 0;color:var(--muted);font-size:14px}
