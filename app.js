@@ -255,7 +255,7 @@ function showSpyglassOrder(r){
  $('#confirm-spyglass').onclick=async()=>{
   if(busy||state.request?.id!==r.id)return;cancelSpyglassDrag?.();busy=true;
   document.querySelectorAll('.spyglass-sort button').forEach(b=>b.disabled=true);$('#sort-status').textContent='Returning your cards…';
-  try{state=await choiceFlow.order(state,[...spyglassOrdering.order],gameCall,d=>state=d);$('#overlay-root').innerHTML='';spyglassOrdering=null;busy=false;renderGame()}
+  try{if(onlineMode){onlineSend({type:'spyglassOrder',requestId:r.id,order:[...spyglassOrdering.order]});$('#overlay-root').innerHTML='';spyglassOrdering=null;return}state=await choiceFlow.order(state,[...spyglassOrdering.order],gameCall,d=>state=d);$('#overlay-root').innerHTML='';spyglassOrdering=null;busy=false;renderGame()}
   catch(e){busy=false;toast(e.message);renderGame()}
  };
 }
