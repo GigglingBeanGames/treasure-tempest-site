@@ -97,3 +97,24 @@ label{display:grid;gap:6px;color:var(--muted)}
 .power-offers .power{text-align:left;padding:12px;min-width:0}
 .power-offers .power img{height:min(36svh,330px)}
 @media(max-width:620px){.power-offers{grid-template-columns:1fr}.power-offers .power img{height:210px}}
+
+/* Shopify Buy Now Button */
+.buy-now-button {
+    display: inline-block;
+    padding: 11px 14px;
+    border: 1px solid var(--gold);
+    border-radius: 8px;
+    background: var(--gold);
+    color: #172733;
+    font-family: Georgia, serif;
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.buy-now-button:hover {
+    background: #ffe09a;
+    transform: translateY(-2px);
+}
